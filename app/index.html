@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Justfit</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel='stylesheet prefetch' href='http://brokensquare.com/Code/jquery-flipster/dist/jquery.flipster.min.css'>
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo.svg" width="155" alt="Justfit">
+            </a>
+          </div>
+
+          <nav class="header__nav nav">
+            <ul class="nav-list" id="menu">
+              <li class="nav-list__has-child">
+                <a href="#studios">Студии</a><!-- <img src="img/icons/down-arrow.svg" alt="down"> -->
+                <!-- <ul class="nav-submenu">
+                  <li><a href="#studios">Студия-1</a></li>
+                  <li><a href="#studios">Студия-2</a></li>
+                  <li><a href="#studios">Студия-3</a></li>
+                </ul> -->
+              </li>
+              <li><a href="#ems">Что такое EMS</a></li>
+              <li><a href="#abonements">Абонементы</a></li>
+              <li><a href="#about">FAQ</a></li>
+              <li class="nav-list__has-child">
+                <a href="#contacts">Контакты</a><!-- <img src="img/icons/down-arrow.svg" alt="down"> -->
+                <!-- <ul class="nav-submenu">
+                  <li><a href="#contacts">Контакт-1</a></li>
+                  <li><a href="#contacts">Контакт-2</a></li>
+                  <li><a href="#contacts">Контакт-3</a></li>
+                </ul> -->
+              </li>
+            </ul>
+            <div class="nav__social">
+              <div class="social">
+                <a href="#" target="_blank"><img src="img/icons/instagram.svg" alt="instagram"></a>
+                <a href="#" target="_blank"><img src="img/icons/facebook.svg" alt="facebook"></a>
+              </div>
+            </div>
+
+            <div class="nav__phone">
+              <div class="phone">
+                <div class="phone__left">
+                  <a href="tel:+79175155555" class="phone__tel">+7 (987) 65-432-10</a>
+                  <div class="phone__left-bottom">
+                    <span>Наш номер в <br>мессенджерах:</span>
+                    <ul>
+                      <li><a href="https://api.whatsapp.com/send?phone=79999921209"><i class="icon icon-whatsapp"></i></a></li>
+                      <li><a href="viber://add?number=79999921209"><i class="icon icon-viber"></i></a></li>
+                      <li><a href="tg://resolve?domain=JustFitmsk"><i class="icon icon-telegram"></i></a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                <div class="phone__right">
+                  <a href="#" class="main-btn phone__callback callback_open">Заказать звонок</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="social">
+            <a href="#" target="_blank"><img src="img/icons/instagram.svg" alt="instagram"></a>
+            <a href="#" target="_blank"><img src="img/icons/facebook.svg" alt="facebook"></a>
+          </div>
+
+          <div class="header__call">
+            <div class="phone">
+              <div class="phone__left">
+                <a href="tel:+79175155555" class="phone__tel">+7 (987) 65-432-10</a>
+                <div class="phone__left-bottom">
+                  <span>Наш номер в <br>мессенджерах:</span>
+                  <ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=79999921209"><i class="icon icon-whatsapp"></i></a></li>
+                    <li><a href="viber://add?number=79999921209"><i class="icon icon-viber"></i></a></li>
+                    <li><a href="tg://resolve?domain=JustFitmsk"><i class="icon icon-telegram"></i></a></li>
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="phone__right">
+                <a href="#" class="main-btn phone__callback callback_open">Заказать звонок</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="nav-toggle">
+            <span class="nav-toggle__line"></span>
+          </button>
+
+        </div>
+        <!-- /.header__wrap -->
+      </div>
+    </header>
+
+    <section class="first-block">
+      <div class="bottle parallax">
+        <img src="img/bottle.png" alt="bottle">
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper-container header-slider">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide" style="background-image: url(img/preview.jpg);">
+            <div class="header-slider__text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1>Хотите идеальное тело, занимаясь дважды в неделю по 25 минут?</h1>
+                    <a href="#ems" class="main-btn">Узнать подробнее</a>
+                  </div>
+                  <div class="col-md-6">
+
+                    <div class="main-form">
+                      <p>Чтобы попасть на <span>бесплатную</span> тренировку заполните поля ниже!</p>
+                      <form action="sendmail.php" method="post" class="form ask-form">
+                        <input type="hidden" name="subject" value="Оставьте заявку на бесплатную консультацию">
+
+                        <div class="form-group">
+                          <input type="text" class="form__field" name="name" required placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="form-group">
+                          <input type="tel" class="form__field" name="phone" placeholder="Введите Ваш телефон" required>
+                        </div>
+                        
+                        <div class="form-group">
+                          <input type="submit" class="main-btn form__btn" name="submit" value="Заказать звонок">
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /.main-form -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.header-slider__text -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide" style="background-image: url(img/preview.jpg);">
+            <div class="header-slider__text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1>Видимый результат всего после 5 персональных тренировок!</h1>
+                    <a href="#ems" class="main-btn">Узнать подробнее</a>
+                  </div>
+                  <div class="col-md-6">
+
+                    <div class="main-form">
+                      <p>Чтобы попасть на <span>бесплатную</span> тренировку заполните поля ниже!</p>
+                      <form action="sendmail.php" method="post" class="form ask-form">
+                        <input type="hidden" name="subject" value="Оставьте заявку на бесплатную консультацию">
+
+                        <div class="form-group">
+                          <input type="text" class="form__field" name="name" required placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="form-group">
+                          <input type="tel" class="form__field" name="phone" placeholder="Введите Ваш телефон" required>
+                        </div>
+                        
+                        <div class="form-group">
+                          <input type="submit" class="main-btn form__btn" name="submit" value="Заказать звонок">
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /.main-form -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.header-slider__text -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide" style="background-image: url(img/preview.jpg);">
+            <div class="header-slider__text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1>
+                      Быстрое похудение<br>
+                      Крепкие мышцы и рельеф<br>
+                      Идеальный тонус кожи<br>
+                      Здоровая спина и суставы
+                    </h1>
+                  </div>
+                  <div class="col-md-6">
+
+                    <div class="main-form">
+                      <p>Чтобы попасть на <span>бесплатную</span> тренировку заполните поля ниже!</p>
+                      <form action="sendmail.php" method="post" class="form ask-form">
+                        <input type="hidden" name="subject" value="Оставьте заявку на бесплатную консультацию">
+
+                        <div class="form-group">
+                          <input type="text" class="form__field" name="name" required placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="form-group">
+                          <input type="tel" class="form__field" name="phone" placeholder="Введите Ваш телефон" required>
+                        </div>
+                        
+                        <div class="form-group">
+                          <input type="submit" class="main-btn form__btn" name="submit" value="Заказать звонок">
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /.main-form -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.header-slider__text -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide" style="background-image: url(img/preview.jpg);">
+            <div class="header-slider__text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1>Фитнес нового поколения на лучших немецких EMS-тренажерах Miha Bodytec: безупречная репутация, эффективность и безопасность!</h1>
+                  </div>
+                  <div class="col-md-6">
+
+                    <div class="main-form">
+                      <p>Чтобы попасть на <span>бесплатную</span> тренировку заполните поля ниже!</p>
+                      <form action="sendmail.php" method="post" class="form ask-form">
+                        <input type="hidden" name="subject" value="Оставьте заявку на бесплатную консультацию">
+
+                        <div class="form-group">
+                          <input type="text" class="form__field" name="name" required placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="form-group">
+                          <input type="tel" class="form__field" name="phone" placeholder="Введите Ваш телефон" required>
+                        </div>
+                        
+                        <div class="form-group">
+                          <input type="submit" class="main-btn form__btn" name="submit" value="Заказать звонок">
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /.main-form -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.header-slider__text -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide" style="background-image: url(img/preview.jpg);">
+            <div class="header-slider__text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1><span>Лучшие профессиональные</span> тренеры Москвы ждут вас в JustFit Exclusive Club!</h1>
+                  </div>
+                  <div class="col-md-6">
+
+                    <div class="main-form">
+                      <p>Чтобы попасть на <span>бесплатную</span> тренировку заполните поля ниже!</p>
+                      <form action="sendmail.php" method="post" class="form ask-form">
+                        <input type="hidden" name="subject" value="Оставьте заявку на бесплатную консультацию">
+
+                        <div class="form-group">
+                          <input type="text" class="form__field" name="name" required placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="form-group">
+                          <input type="tel" class="form__field" name="phone" placeholder="Введите Ваш телефон" required>
+                        </div>
+                        
+                        <div class="form-group">
+                          <input type="submit" class="main-btn form__btn" name="submit" value="Заказать звонок">
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /.main-form -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.header-slider__text -->
+          </div>
+          <!-- /.swiper-slide -->
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="ems" id="ems">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wrapper">
+              <h2>Что такое EMS?</h2>
+              <div class="ems__content">
+                <p>EMS-тренировка (ЭМС) - это 25-минутный полноценный силовой тренинг в специальном костюме, который помогает эффективно проработать более 90% мышц одновременно!</p>
+                <p>Во время обычной физической нагрузки происходят мышечные сокращения и, как результат, их рост. EMS-технология увеличивает интенсивность и глубину этих сокращений, используя микроимпульсы.</p>
+                <p>Импульсные токи, выдаваемые тренажером Miha Bodytec, абсолютно безопасны для организма, поскольку идентичны импульсам, которые генерирует наш мозг во время обычных занятий спортом.</p>
+                <p>Результат - достижение ваших фитнес-целей в кратчайшие сроки! Как проходит ваша тренировка в JustFit:</p>
+                <ul>
+                  <li>проводим анализ состава тела и физической подготовки и обсуждаем ваши цели</li>
+                  <li>разрабатываем персональную программу тренировок для похудения/ набора мышечной массы/ приобретения мышечного рельефа/ реабилитации после травмы</li>
+                  <li>подбираем индивидуальную программу питания</li>
+                  <li>тренировка проходит один на один с вашим персональным тренером под его строгим контролем</li>
+                  <li>лимфодренажный массаж проводится после каждой тренировки</li>
+                  <li>все, что нужно для тренировки и после нее, мы заботливо предоставляем вам в студии</li>
+                </ul>
+
+                <h3>Любая ваша цель достижима:</h3>
+
+                <ul>
+                  <li>Похудеть быстро и эффективно</li>
+                  <li>Избавиться от целлюлита</li>
+                  <li>Повысить упругость и тонус кожи</li>
+                  <li>Увеличить мышечную массу и приобрести красивый мышечный рельеф</li>
+                  <li>«подсушиться»</li>
+                  <li>Восстановиться после родов</li>
+                  <li>Избавиться от болей в спине</li>
+                  <li>Улучшить осанку</li>
+                  <li>Стать сильнее и выносливее</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="button-block">
+              <a href="#" class="main-btn callback_open">Узнать подробнее</a>
+              <a href="#" class="main-btn btn-green partner_open">Стать партнером</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="run">
+              <img src="img/run.jpg" alt="run">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.ems -->
+
+    <section class="namber" style="background-image: url(img/section-namber-bg.jpg);">
+      <div class="container">
+        <h2>EMS в цифрах</h2>
+        <div class="sub-title">Похудение - Формирование фигуры - Укрепление: <br>Видимый успех на всех уровнях</div>
+        <ul>
+          <li>
+            <p class="namber__percent">87%</p>
+            <p class="namber__sub-title">заметили явный эффект</p>
+            <p class="namber__content">Участники теста восторженно сообщают о явно заметных эффектах коррекции фигуры. Собственное тело воспринимается позитивно.</p>
+          </li>
+          <li>
+            <p class="namber__percent">89%</p>
+            <p class="namber__sub-title">подтянулись</p>
+            <p class="namber__content">Участники почувствовали себя после тренировок более подтянутыми.</p>
+          </li>
+          <li>
+            <p class="namber__percent">-2,3см</p>
+            <p class="namber__sub-title">в животе</p>
+            <p class="namber__content">У мужчин сократился охват живота на 2,3см при одновременном приросте мышц на 1-2 см на ногах, груди и руках.</p>
+          </li>
+          <li>
+            <p class="namber__percent">-6,8%</p>
+            <p class="namber__sub-title">жира</p>
+            <p class="namber__content">На животе и 6 см в талии потеряли участники в возрасте более 65 лет при 30-минутных тренировках каждые 5 дн.</p>
+          </li>
+          <li>
+            <p class="namber__percent">-4%</p>
+            <p class="namber__sub-title">содержание жира</p>
+            <p class="namber__content">в организме уменьшилось за 6 недель проведения ЭМС-тренировок </p>
+          </li>
+          <li>
+            <p class="namber__percent">1,5см</p>
+            <p class="namber__sub-title">стройнее</p>
+            <p class="namber__content">Женщины стали стройнее в среднем на 1.5 см в талии</p>
+          </li>
+          <li>
+            <p class="namber__percent">-6,5</p>
+            <p class="namber__sub-title">килограмм</p>
+            <p class="namber__content">Участники, страдавшие от избыточного веса, похудели на 6,5 кг, сократили жир на 9%, уменьшили размер талии на 6,5 см и обхват плеча на 2 см после 13 недель проведения тренировок. </p>
+          </li>
+          <li>
+            <div class="namber__wrap">
+              <p><img src="img/next.svg" alt="next" height="8" width="5"> Идет ли речь о тонкой талии, рельефной мускулатуре или уменьшении жира - иследования подтверждают эффективность тренировок всего тела с помощью Miha Bodytec:*</p>
+              <p>*Источник: Исследования университета города Баеройт Boeckh-Behrens/Vatter 2003, Boeckh-Behrens/Walz/Niewöhner 2003, Boeckh-Behrens/Sebelefsky/Grützmacher 2002, Boeckh-Behrens/Stötzel/Benner 2003, Boeckh-Behrens/Treu 2002), Исследования университета им. Фридриха Александра города Ерланген-Нюрнберг (Kemmler/Birlauf/von Stengel 2009), собственные исследования.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <h3>Преимущества</h3>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="advantages__item">
+              <img src="img/icons/icon-quality.svg" width="66" height="80" alt="Высшее качество услуг и квалификация тренеров">
+              <h4>Высшее качество услуг и квалификация тренеров</h4>
+              <p>Вас ждет самое надежное оборудование и профессиональная команда</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="advantages__item">
+              <img src="img/icons/icon-clock.svg" width="80" height="80" alt="Быстрый результат и экономия времени">
+              <h4>Быстрый результат и экономия времени</h4>
+              <p>Две-три тренировки по 25 минут в неделю, видимый результат уже через 2 недели</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="advantages__item">
+              <img src="img/icons/icon-armchair.svg" width="80" height="75" alt="У нас в студии есть все для вашего комфорта">
+              <h4>У нас в студии есть все для вашего комфорта</h4>
+              <p>Индивидуальные душевые, все необходимые туалетные принадлежности, косметика, костюмы для занятий</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="advantages__item">
+              <img src="img/icons/icon-cash.svg" width="77" height="80" alt="Тренироваться в Justfit - выгодно!">
+              <h4>Тренироваться в Justfit - выгодно!</h4>
+              <p>В отличие от обычного фитнеса не нужно приобретать клубную карту, вы оплачиваете только ваши персональные тренировки!</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.advantages -->
+
+    <section class="studios" id="studios">
+      <div class="container">
+        <h3>Наши студии</h3>
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1">Курская</li>
+          <li class="tab-link" data-tab="tab-2">Менделеевская</li>
+          <li class="tab-link" data-tab="tab-3">Мосфильмовская</li>
+          <li class="tab-link" data-tab="tab-4">Белорусская</li>
+        </ul>
+      </div>
+
+      <div class="container">
+
+        <div id="tab-1" class="row tab-content current">
+          <div class="col-md-12">
+            <h4>Курская<br><span>г. Москва, ул. Нижний Сусальный пер., д. 5, стр. 19 (Бизнес-квартал "Арма")</span></h4>
+            <div class="col-md-5">
+              <div class="tabs__wrapper">
+                <div class="tabs__item">
+
+                  <img src="img/icons/clock.svg" alt="clock">
+                  <p>Экономия времени <br> <span>15-20 минут EMS тренировки</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/no-j.png" alt="no-j">
+                  <p>Без тяжестей и травм<br><span> Нагрузка на спину и суставы отсутствует, а травмы - исключены</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/boy.svg" alt="boy">
+                  <p>Личный тренер<br><span> Все тренировки проходят 1-на-1 с персональным тренером</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/placeholder.svg" alt="location">
+                  <p>Удобное расположение<br><span> 2 минуты от станции метро</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <!-- Swiper -->
+              <div class="swiper-container atrium-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="room"></div>
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="flat"></div>
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="room"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev">
+                  <img src="img/icons/next.png" alt="next">
+                </div>
+                <div class="swiper-button-next">
+                  <img src="img/icons/prev.png" alt="prev">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.tab-content -->
+
+        <div id="tab-2" class="row tab-content">
+          <div class="col-md-12">
+            <h4>Фитнес клуб «Атриум» в ТРЦ «Атриум» <br><span>г. Москва, ул. Земляной Вал, 33</span></h4>
+            <div class="col-md-5">
+              <div class="tabs__wrapper">
+                <div class="tabs__item">
+
+                  <img src="img/icons/clock.svg" alt="clock">
+                  <p>Экономия времени <br> <span>15-20 минут EMS тренировки</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/no-j.png" alt="no-j">
+                  <p>Без тяжестей и травм<br><span> Нагрузка на спину и суставы отсутствует, а травмы - исключены</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/boy.svg" alt="boy">
+                  <p>Личный тренер<br><span> Все тренировки проходят 1-на-1 с персональным тренером</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/placeholder.svg" alt="location">
+                  <p>Удобное расположение<br><span> 2 минуты от станции метро</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <!-- Swiper -->
+              <div class="swiper-container atrium-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="room"></div>
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="flat"></div>
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="room"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev">
+                  <img src="img/icons/next.png" alt="next">
+                </div>
+                <div class="swiper-button-next">
+                  <img src="img/icons/prev.png" alt="prev">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.tab-content -->
+
+        <div id="tab-3" class="row tab-content">
+          <div class="col-md-12">
+            <h4>Фитнес клуб «Золотой Вавилон» <br><span>г. Москва, ул. Земляной Вал, 33</span></h4>
+            <div class="col-md-5">
+              <div class="tabs__wrapper">
+                <div class="tabs__item">
+
+                  <img src="img/icons/clock.svg" alt="clock">
+                  <p>Экономия времени <br> <span>15-20 минут EMS тренировки</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/no-j.png" alt="no-j">
+                  <p>Без тяжестей и травм<br><span> Нагрузка на спину и суставы отсутствует, а травмы - исключены</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/boy.svg" alt="boy">
+                  <p>Личный тренер<br><span> Все тренировки проходят 1-на-1 с персональным тренером</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/placeholder.svg" alt="location">
+                  <p>Удобное расположение<br><span> 2 минуты от станции метро</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <!-- Swiper -->
+              <div class="swiper-container atrium-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="room"></div>
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="flat"></div>
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="room"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev">
+                  <img src="img/icons/next.png" alt="next">
+                </div>
+                <div class="swiper-button-next">
+                  <img src="img/icons/prev.png" alt="prev">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.tab-content -->
+
+        <div id="tab-4" class="row tab-content">
+          <div class="col-md-12">
+            <h4>Белорусская<br><span>г. Москва, ул. 4-й Лесной переулок, 13</span></h4>
+            <div class="col-md-5">
+              <div class="tabs__wrapper">
+                <div class="tabs__item">
+
+                  <img src="img/icons/clock.svg" alt="clock">
+                  <p>Экономия времени <br> <span>15-20 минут EMS тренировки</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/no-j.png" alt="no-j">
+                  <p>Без тяжестей и травм<br><span> Нагрузка на спину и суставы отсутствует, а травмы - исключены</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/boy.svg" alt="boy">
+                  <p>Личный тренер<br><span> Все тренировки проходят 1-на-1 с персональным тренером</span></p>
+                </div>
+                <div class="tabs__item">
+                  <img src="img/icons/placeholder.svg" alt="location">
+                  <p>Удобное расположение<br><span> 2 минуты от станции метро</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <!-- Swiper -->
+              <div class="swiper-container atrium-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="room"></div>
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="flat"></div>
+                  <div class="swiper-slide"><img src="img/room.jpg" alt="room"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev">
+                  <img src="img/icons/next.png" alt="next">
+                </div>
+                <div class="swiper-button-next">
+                  <img src="img/icons/prev.png" alt="prev">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.tab-content -->
+
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="img/offer-people.png" alt="" class="offer__people">
+          </div>
+          <div class="col-md-7">
+            <div class="offer__content">
+              <h2>Запишитесь на сайте</h2>
+              <p>Тренировка за <span>1400</span> <strong>950</strong> рублей <br>или оплатите онлайн за <strong>690</strong> рублей</p>
+              <a href="javascript:void(0);" class="main-btn">Оплатить онлайн</a>
+              <a href="javascript:void(0);" class="main-btn btn-white enroll_open">Записаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.offer -->
+
+    <div class="flipster-block" id="abonements">
+      <div class="container">
+        <div class="flipster">
+          <div class="flip-items">
+            <div class="subscription-slider__item">
+              <div class="subscription-slider__header">
+                <div class="subscription-slider__stars">
+                  <img src="img/icons/stars.svg" alt="" width="85" height="40">
+                </div>
+                <h3>Start</h3>
+                <div class="subscription-slider__header-price-wrap">
+                  <p>Одна тренировка</p>
+                  <p class="subscription-slider__header-price">2 300Р</p>
+                </div>
+              </div>
+
+              <div class="subscription-slider__content">
+                <p>5 визитов</p>
+                <p>Срок действия <br>45 дней</p>
+
+                <ul>
+                  <li>Тренажерный зал</li>
+                  <li>Доступ во все клубы сети</li>
+                  <li>Групповые программы</li>
+                  <li>Шкафчик в раздевалке</li>
+                </ul>
+
+                <span class="subscription-slider__price">11 500 руб.</span>
+                <span class="subscription-slider__econom">До 50% экономии</span>
+
+                <a href="javascript:void(0);" class="main-btn btn-green">Оплатить онлайн</a>
+              </div>
+            </div>
+            <!-- /.subscription-slider__item -->
+            <div class="subscription-slider__item">
+              <div class="subscription-slider__header">
+                <div class="subscription-slider__stars">
+                  <img src="img/icons/stars.svg" alt="" width="85" height="40">
+                </div>
+                <h3>Classic</h3>
+                <div class="subscription-slider__header-price-wrap">
+                  <p>Одна тренировка</p>
+                  <p class="subscription-slider__header-price">2 100Р</p>
+                </div>
+              </div>
+
+              <div class="subscription-slider__content">
+                <p>10 визитов</p>
+                <p>Срок действия <br>70 дней</p>
+
+                <ul>
+                  <li>Тренажерный зал</li>
+                  <li>Доступ во все клубы сети</li>
+                  <li>Групповые программы</li>
+                  <li>Шкафчик в раздевалке</li>
+                </ul>
+
+                <span class="subscription-slider__price">21 000 руб.</span>
+                <span class="subscription-slider__econom">До 50% экономии</span>
+
+                <a href="javascript:void(0);" class="main-btn btn-green">Оплатить онлайн</a>
+              </div>
+            </div>
+            <!-- /.subscription-slider__item -->
+
+            <div class="subscription-slider__item">
+              <div class="subscription-slider__header">
+                <div class="subscription-slider__stars">
+                  <img src="img/icons/stars.svg" alt="" width="85" height="40">
+                </div>
+                <h3>Master</h3>
+                <div class="subscription-slider__header-price-wrap">
+                  <p>Одна тренировка</p>
+                  <p class="subscription-slider__header-price">1 850Р</p>
+                </div>
+              </div>
+
+              <div class="subscription-slider__content">
+                <p>20 визитов</p>
+                <p>Срок действия <br>3 месяца</p>
+
+                <ul>
+                  <li>Тренажерный зал</li>
+                  <li>Доступ во все клубы сети</li>
+                  <li>Групповые программы</li>
+                  <li>Шкафчик в раздевалке</li>
+                </ul>
+
+                <span class="subscription-slider__price">37 000 руб.</span>
+                <span class="subscription-slider__econom">До 50% экономии</span>
+
+                <a href="javascript:void(0);" class="main-btn btn-green">Оплатить онлайн</a>
+              </div>
+            </div>
+            <!-- /.subscription-slider__item -->
+
+            <div class="subscription-slider__item">
+              <div class="subscription-slider__header">
+                <div class="subscription-slider__stars">
+                  <img src="img/icons/stars.svg" alt="" width="85" height="40">
+                </div>
+                <h3>Expert</h3>
+                <div class="subscription-slider__header-price-wrap">
+                  <p>Одна тренировка</p>
+                  <p class="subscription-slider__header-price">1 540Р</p>
+                </div>
+              </div>
+
+              <div class="subscription-slider__content">
+                <p>50 визитов</p>
+                <p>Срок действия <br>7 месяцев</p>
+
+                <ul>
+                  <li>Тренажерный зал</li>
+                  <li>Доступ во все клубы сети</li>
+                  <li>Групповые программы</li>
+                  <li>Шкафчик в раздевалке</li>
+                </ul>
+
+                <span class="subscription-slider__price">77 000 руб.</span>
+                <span class="subscription-slider__econom">До 50% экономии</span>
+
+                <a href="javascript:void(0);" class="main-btn btn-green">Оплатить онлайн</a>
+              </div>
+            </div>
+            <!-- /.subscription-slider__item -->
+
+            <div class="subscription-slider__item">
+              <div class="subscription-slider__header">
+                <div class="subscription-slider__stars">
+                  <img src="img/icons/stars.svg" alt="" width="85" height="40">
+                </div>
+                <h3>Premium</h3>
+                <div class="subscription-slider__header-price-wrap">
+                  <p>Одна тренировка</p>
+                  <p class="subscription-slider__header-price">1 250Р</p>
+                </div>
+              </div>
+
+              <div class="subscription-slider__content">
+                <p>100 визитов</p>
+                <p>Срок действия <br>15 месяцев</p>
+
+                <ul>
+                  <li>Тренажерный зал</li>
+                  <li>Доступ во все клубы сети</li>
+                  <li>Групповые программы</li>
+                  <li>Шкафчик в раздевалке</li>
+                </ul>
+
+                <span class="subscription-slider__price">125 000 руб.</span>
+                <span class="subscription-slider__econom">До 50% экономии</span>
+
+                <a href="javascript:void(0);" class="main-btn btn-green">Оплатить онлайн</a>
+              </div>
+            </div>
+            <!-- /.subscription-slider__item -->
+
+          </div>
+          <div class="my-prev"><img src="img/left.svg" alt=""></div>
+          <div class="my-next"><img src="img/left.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <!-- /.flipster-block -->
+
+    <section class="press" id="abonements">
+      <div class="container">
+        <h2>Пресса о нас</h2>
+        <div class="press__wrapper">
+          <div class="press__container swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="press__slide swiper-slide">
+                    <img src="img/press.jpg" alt="press">
+                    <div class="press__slide_content">
+                      <p class="date"><span>Журнал «Эксперт»</span><time>10.03.2014</time></p>
+                      <h4>Тесла был бы удивлен. Электрическая зарядка тела</h4>
+                      <p>Семнадцать минут вместо шести часов. Работа не на процесс, а на результат, который в буквальном смысле слова налицо. Прибегая к электронно-мышечной стимуляции (ЭМС) один-два раза в неделю, можно производить впечатление человека, который не выходит из спортзала. Даже есть риск навлечь на себя зависть коллег в галстуках за столом переговоров или на совете директоров, например.</p>
+                      <p class="author"><span>Автор статьи: </span><span>Елена Николаева</span></p>
+                    </div>
+                  </div>
+                  <div class="press__slide swiper-slide">
+                    <img src="img/press.jpg" alt="press">
+                    <div class="press__slide_content">
+                      <p class="date"><span>Журнал «Эксперт»</span><time>10.03.2014</time></p>
+                      <h4>Тесла был бы удивлен. Электрическая зарядка тела</h4>
+                      <p>Семнадцать минут вместо шести часов. Работа не на процесс, а на результат, который в буквальном смысле слова налицо. Прибегая к электронно-мышечной стимуляции (ЭМС) один-два раза в неделю, можно производить впечатление человека, который не выходит из спортзала. Даже есть риск навлечь на себя зависть коллег в галстуках за столом переговоров или на совете директоров, например.</p>
+                      <p class="author"><span>Автор статьи: </span><span>Елена Николаева</span></p>
+                    </div>
+                  </div>
+                  <div class="press__slide swiper-slide">
+                    <img src="img/press.jpg" alt="press">
+                    <div class="press__slide_content">
+                      <p class="date"><span>Журнал «Эксперт»</span><time>10.03.2014</time></p>
+                      <h4>Тесла был бы удивлен. Электрическая зарядка тела</h4>
+                      <p>Семнадцать минут вместо шести часов. Работа не на процесс, а на результат, который в буквальном смысле слова налицо. Прибегая к электронно-мышечной стимуляции (ЭМС) один-два раза в неделю, можно производить впечатление человека, который не выходит из спортзала. Даже есть риск навлечь на себя зависть коллег в галстуках за столом переговоров или на совете директоров, например.</p>
+                      <p class="author"><span>Автор статьи: </span><span>Елена Николаева</span></p>
+                    </div>
+                  </div>
+                  <div class="press__slide swiper-slide">
+                    <img src="img/press.jpg" alt="press">
+                    <div class="press__slide_content">
+                      <p class="date"><span>Журнал «Эксперт»</span><time>10.03.2014</time></p>
+                      <h4>Тесла был бы удивлен. Электрическая зарядка тела</h4>
+                      <p>Семнадцать минут вместо шести часов. Работа не на процесс, а на результат, который в буквальном смысле слова налицо. Прибегая к электронно-мышечной стимуляции (ЭМС) один-два раза в неделю, можно производить впечатление человека, который не выходит из спортзала. Даже есть риск навлечь на себя зависть коллег в галстуках за столом переговоров или на совете директоров, например.</p>
+                      <p class="author"><span>Автор статьи: </span><span>Елена Николаева</span></p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        
+        <div class="press__pagination swiper-pagination"></div>
+
+      </div>
+    </section>
+    <!-- /.section -->
+
+    <section class="reviews" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Отзывы</h3>
+            <div class="swiper-container reviews-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper__list">
+                  <div class="girl"><img src="img/girl.jpg" alt="girl"><p class="kate">Екатерина</p></div>
+                  <p>Очень нравится Ваш клуб! Приятная атмосфера и всегда большое разнообразие тренировок. Персоналу отдельная благодарность, за индивидуальный подход к каждому клиенту. Полине огромное спасибо за то, что с Вами все понятно, всегда приятно и легко иметь дело. Замечательный клуб, приветливые и замечательные администраторы! Спасибо за то, что Вы есть! Сюда хочется приходить и хочется достигать поставленных целей! </p>
+                </div>
+                <div class="swiper-slide swiper__list">
+                  <div class="girl"><img src="img/girl.jpg" alt="girl"><p class="kate">Екатерина</p></div>
+                  <p>Очень нравится Ваш клуб! Приятная атмосфера и всегда большое разнообразие тренировок. Персоналу отдельная благодарность, за индивидуальный подход к каждому клиенту. Полине огромное спасибо за то, что с Вами все понятно, всегда приятно и легко иметь дело. Замечательный клуб, приветливые и замечательные администраторы! Спасибо за то, что Вы есть! Сюда хочется приходить и хочется достигать поставленных целей! </p>
+                </div>
+                <div class="swiper-slide swiper__list">
+                  <div class="girl"><img src="img/girl.jpg" alt="girl"><p class="kate">Екатерина</p></div>
+                  <p>Очень нравится Ваш клуб! Приятная атмосфера и всегда большое разнообразие тренировок. Персоналу отдельная благодарность, за индивидуальный подход к каждому клиенту. Полине огромное спасибо за то, что с Вами все понятно, всегда приятно и легко иметь дело. Замечательный клуб, приветливые и замечательные администраторы! Спасибо за то, что Вы есть! Сюда хочется приходить и хочется достигать поставленных целей! </p>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>Часто задаваемые вопросы</h3>
+            <div class="accordion">
+              <div class="accordion__top">
+                <h4>Есть ли пробное посещение?</h4>
+                <span class="carret"></span>
+              </div>
+              <div class="accordion__content">
+                <p>У нас есть годовой абонемент стоимостью 20000₽. При покупке годового абонемента ты платишь только за 11 месяцев по 1500₽, а один месяц получаешь в подарок. По абонементу «Premium» ты сможешь безлимитно посещать тренажерный зал</p>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__top">
+                <h4>Можно ли оплатить сразу за год?</h4>
+                <span class="carret"></span>
+              </div>
+              <div class="accordion__content">
+                <p>У нас есть годовой абонемент стоимостью 20000₽. При покупке годового абонемента ты платишь только за 11 месяцев по 1500₽, а один месяц получаешь в подарок. По абонементу «Premium» ты сможешь безлимитно посещать тренажерный зал</p>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__top">
+                <h4>С какого возраста можно посещать клуб?</h4>
+                <span class="carret"></span>
+              </div>
+              <div class="accordion__content">
+                <p>У нас есть годовой абонемент стоимостью 20000₽. При покупке годового абонемента ты платишь только за 11 месяцев по 1500₽, а один месяц получаешь в подарок. По абонементу «Premium» ты сможешь безлимитно посещать тренажерный зал</p>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__top">
+                <h4>Есть ли в клубах бассейн или сауна?</h4>
+                <span class="carret"></span>
+              </div>
+              <div class="accordion__content">
+                <p>У нас есть годовой абонемент стоимостью 20000₽. При покупке годового абонемента ты платишь только за 11 месяцев по 1500₽, а один месяц получаешь в подарок. По абонементу «Premium» ты сможешь безлимитно посещать тренажерный зал</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.reviews -->
+
+    <section class="ems" id="ems">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wrapper">
+              <h2>Регулярное растягивание:</h2>
+              <div class="ems__content">
+                <ul>
+                  <li>Уменьшает мышечную напряженность, заставляя тело расслабиться;</li>
+                  <li>Развивает координацию, позволяя двигаться свободнее и легче;</li>
+                  <li>Расширяет диапазон доступных движений;</li>
+                  <li>помогает предотвратить травмы;</li>
+                  <li>подготавливает к физической активности и облегчает занятия, связанные с большими нагрузками;</li>
+                  <li> помогает поддерживать гибкость вашего тела, препятствуя уменьшению подвижности суставов;</li>
+                  <li>учит ощущать свое тело</li>
+                  <li>обеспечивает хорошее самочувствие.</li>
+                </ul>
+                <p>
+                  Научиться растягиваться может каждый, независимо от возраста или гибкости тела<br>
+                  Для этого не нужно находиться на пике физического развития или обладать особыми спортивными навыками. Поэтому, если вы здоровы и не испытываете никаких физических проблем, то сумеете научиться растягиванию без всякого риска и с удовольствием. 
+                </p>
+              </div>
+            </div>
+
+            <div class="button-block">
+              <a href="#" class="main-btn callback_open">Узнать подробнее</a>
+              <a href="#" class="main-btn btn-green partner_open">Стать партнером</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="run">
+              <img src="img/run.jpg" alt="run">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.ems -->
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h3>Контакты</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/fitness-sport.jpg" alt="fitness">
+          </div>
+          <div class="col-md-6">
+            <div class="accordion">
+              <div class="accordion__top">
+                <div class="contacts__icon">
+                  <img src="img/icons/contact-item.svg" alt="contact" class="local">
+                  <h5>Фитнес клуб в ТРЦ “Вегас” <span><br>24-й км МКАД (Каширское ш.), Москва</span></h5>
+                  <span class="carret"></span>
+                </div>
+              </div>
+              <div class="accordion__content">
+                <div class="contacts__block">
+                  <div class="contacts__icon"><img src="img/icons/contact-item-2.svg" alt="schedule"><p>Часы работы: <br><span>Пн - Пт: 10:00 - 23:00</span></p></div>
+                  <div class="contacts__icon"><img src="img/icons/contact-item-3.svg" alt="schedule"><p>Телефон: <br><a href="tel:+79175155555"><span>+7 (987) 65-432-10</span></a></p></div>
+                </div>
+                <div class="contacts__block-2">
+                  <div class="contacts__icon"><img src="img/icons/contact-item-4.svg" alt="schedule"><p>E-mail: <br><a href="mailto:oursupport@club.ru">oursupport@club.ru</a></p></div>
+                  <p><a href="#" class="main-btn btn-green callback_open">Расписание клуба</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__top">
+                <div class="contacts__icon">
+                  <img src="img/icons/contact-item.svg" alt="contact" class="local">
+                  <h5>Фитнес клуб в ТРЦ “Атриум” <span><br>ул. Земляной Вал, 33, Москва</span></h5>
+                  <span class="carret"></span>
+                </div>
+              </div>
+              <div class="accordion__content">
+                <div class="contacts__block">
+                  <div class="contacts__icon">
+                    <img src="img/icons/contact-item-2.svg" alt="contact">
+                    <p>Часы работы: <br><span>Пн - Пт: 10:00 - 23:00</span></p>
+                  </div>
+                  <div class="contacts__icon">
+                    <img src="img/icons/contact-item-3.svg" alt="contact">
+                    <p>Телефон: <br><a href="tel:+79175155555"><span>+7 (987) 65-432-10</span></a></p>
+                  </div>
+                </div>
+                <div class="contacts__block-2">
+                  <div class="contacts__icon">
+                    <img src="img/icons/contact-item-4.svg" alt="contact">
+                    <p>E-mail: <br><a href="mailto:oursupport@club.ru">oursupport@club.ru</a></p>
+                  </div>
+                  <div>
+                    <p><a href="#" class="main-btn btn-green callback_open">Расписание клуба</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion">
+              <div class="accordion__top">
+                <div class="contacts__icon">
+                  <img src="img/icons/contact-item.svg" alt="contact" class="local">
+                  <h5>Фитнес клуб в ТРЦ “Золотой Вавилон” <span><br>просп. Мира, 211 (пр. Серебрякова), Москва</span></h5>
+                  <span class="carret"></span>
+                </div>
+              </div>
+              <div class="accordion__content">
+                <div class="contacts__block">
+                  <div class="contacts__icon"><img src="img/icons/contact-item-2.svg" alt="contact"><p>Часы работы: <br><span>Пн - Пт: 10:00 - 23:00</span></p></div>
+                  <div class="contacts__icon"><img src="img/icons/contact-item-3.svg" alt="contact"><p>Телефон: <br><a href="tel:79175155555"><span>+7 (987) 65-432-10</span></a></p></div>
+                </div>
+                <div class="contacts__block-2">
+                  <div class="contacts__icon"><img src="img/icons/contact-item-4.svg" alt="contact"><p>E-mail: <br><a href="mailto:oursupport@club.ru">oursupport@club.ru</a></p></div>
+                  <div><p><a href="#" class="main-btn btn-green callback_open">Расписание клуба</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__top">
+                <div class="contacts__icon">
+                  <img src="img/icons/contact-item.svg" alt="contact" class="local">
+                  <h5>Фитнес клуб в ТРЦ “Океания” <span><br>просп. Вернадского, 6, Москва</span></h5>
+                  <span class="carret"></span>
+                </div>
+              </div>
+              <div class="accordion__content">
+                <div class="contacts__block">
+                  <div class="contacts__icon">
+                    <img src="img/icons/contact-item-2.svg" alt="contact">
+                    <p>Часы работы: <br><span>Пн - Пт: 10:00 - 23:00</span></p>
+                  </div>
+                  <div class="contacts__icon">
+                    <img src="img/icons/contact-item-3.svg" alt="contact">
+                    <p>Телефон: <br><a href="tel:79175155555"><span>+7 (987) 65-432-10</span></a></p>
+                  </div>
+                </div>
+                <div class="contacts__block-2">
+                  <div class="contacts__icon">
+                    <img src="img/icons/contact-item-4.svg" alt="contact">
+                    <p>E-mail: <br><a href="mailto:oursupport@club.ru">oursupport@club.ru</a></p>
+                  </div>
+                  <p><a href="#" class="main-btn btn-green callback_open">Расписание клуба</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+      <div class="thumb">
+        <img src="img/thumb.png" alt="thumb">
+      </div>
+    </section>
+    <!-- /.contacts -->
+
+    <section class="offer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="img/offer-people.png" alt="" class="offer__people">
+          </div>
+          <div class="col-md-7">
+            <div class="offer__content">
+              <h2>Запишитесь на сайте</h2>
+              <p>Тренировка за <span>1400</span> <strong>950</strong> рублей <br>или оплатите онлайн за <strong>690</strong> рублей</p>
+              <a href="javascript:void(0);" class="main-btn">Оплатить онлайн</a>
+              <a href="javascript:void(0);" class="main-btn btn-white enroll_open">Записаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.offer -->
+
+    <section class="blog">
+      <div class="container">
+        <div class="thumb-small parallax-thumb">
+          <img src="img/thumb-small.png" alt="thumb">
+        </div>
+        <h3>Блог</h3>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="blog__wrapper">
+              <div class="top-text">
+                <img src="img/fitness-1.jpg" alt="fitness">
+                <h4>КАК СДЕЛАТЬ ВЫБОР: ТРЕНАЖЕРНЫЙ ЗАЛ ИЛИ ЗАЛ ГРУППОВЫХ ПРОГРАММ?</h4>
+              </div>
+              <div class="details">
+                <p><a href="#">Подробнее</a></p>
+                <p>04.05.2018</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="blog__wrapper">
+              <div class="top-text">
+                <img src="img/fitness-2.jpg" alt="fitness">
+                <h4>РАСТЯЖКА ПОСЛЕ ТРЕНИРОВКИ</h4>
+              </div>
+              <div class="details">
+                <p><a href="#">Подробнее</a></p>
+                <p>04.05.2018</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="blog__wrapper">
+              <div class="top-text">
+                <img src="img/fitness-3.jpg" alt="fitness">
+                <h4>НУЖНО ЛИ ЗАНИМАТЬСЯ ФИТНЕСОМ?</h4>
+              </div>
+              <div class="details">
+                <p><a href="#">Подробнее</a></p>
+                <p>04.05.2018</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="blog__wrapper">
+              <div class="top-text">
+                <img src="img/fitness-4.jpg"  alt="fitness">
+                <h4>КАК ВЫБРАТЬ ТРЕНАЖЕРНЫЙ ЗАЛ</h4>
+              </div>
+              <div class="details">
+                <p><a href="#">Подробнее</a></p>
+                <p>04.05.2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="tog-btn-2">
+          <a href="#" id="toggle-example3" class="toggle">Показать еще</a>
+        </p>
+      </div>
+    </section>
+    <!-- /.blog -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+
+          <div class="footer__logo">
+            <a href = "#">
+              <img src="img/logo.svg" width="155" alt="Justfit">
+            </a>
+          </div>
+
+          <div class="footer__nav">
+            <p>Меню:</p>
+            <ul class="nav-list">
+              <li><a href="#studios">Студии</a></li>
+              <li><a href="#ems">Что такое EMS</a></li>
+              <li><a href="#abonements">Абонементы</a></li>
+              <li><a href="#schedule">Расписание</a></li>
+              <li><a href="#about">FAQ</a></li>
+              <li><a href="javascript:void(0);" class="vacancies_open">Вакансии</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="address">
+            <p>Адреса клубов:</p>
+            <ul>
+              <li>ул. Земляной Вал, 33 г. Москва</li>
+              <li>просп. Вернадского, 6 г. Москва</li>
+              <li>просп. Мира, 211 г. Москва</li>
+              <li>24-й км МКАД г. Москва</li>
+            </ul>
+          </div>
+
+          <div class="social">
+            <p>Мы в соц.сетях:</p>
+            <a href="#"><img src="img/icons/instagram.svg" alt="social"></a> <a href="#"><img src="img/icons/facebook.svg" alt="social"></a>
+          </div>
+
+          <div class="footer__call">
+            <div class="phone">
+              <div class="phone__left">
+                <a href="tel:+79175155555" class="phone__tel">+7 (987) 65-432-10</a>
+                <div class="phone__left-bottom">
+                  <span>Наш номер в <br>мессенджерах:</span>
+                  <ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=79999921209"><i class="icon icon-whatsapp"></i></a></li>
+                    <li><a href="viber://add?number=79999921209"><i class="icon icon-viber"></i></a></li>
+                    <li><a href="tg://resolve?domain=JustFitmsk"><i class="icon icon-telegram"></i></a></li>
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="phone__right">
+                <a href="#" class="main-btn phone__callback callback_open">Заказать звонок</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.footer__content -->
+
+        <p class="copyright">2018 &copy; Justfit | All rights reserved.</p>
+
+      </div>
+
+    </footer>
+
+    <div id="callback" class="modal">
+      <button class="callback_close modal__close">
+        Close
+        <span class="modal__close-line"></span>
+      </button>
+      <h3>Обратный звонок</h3>
+      <p>Заполните форму и наш менеджер свяжется с вами в течение 5 минут</p>
+      <form action="sendmail.php" class="row form callback-form" method="post">
+        <input type="hidden" name="subject" value="Обратный звонок">
+        <div class="col-sm-12 form-group">
+          <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input type="tel" name="phone" class="form__field" required placeholder="+7 (___) ___-__-__" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="19">
+        </div>
+        <div class="col-sm-12 form-group">
+          <input type="submit" class="main-btn" name="submit" value="Заказать звонок">
+        </div>
+      </form>
+    </div>
+
+    <div id="vacancies" class="modal">
+      <button class="vacancies_close modal__close">
+        Close
+        <span class="modal__close-line"></span>
+      </button>
+      <h3>Мы ищем</h3>
+
+      <ul>
+        <li>lorem ipsum dolor</li>
+        <li>lorem ipsum dolor</li>
+        <li>lorem ipsum dolor</li>
+        <li>lorem ipsum dolor</li>
+        <li>lorem ipsum dolor</li>
+        <li>lorem ipsum dolor</li>
+        <li>lorem ipsum dolor</li>
+      </ul>
+
+      <p>Отправляйте Ваше резюме на <a href="mailto:justfit@mail.com">justfit@mail.com</a></p>
+
+    </div>
+
+    <div id="partner" class="modal">
+      <button class="partner_close modal__close">
+        Close
+        <span class="modal__close-line"></span>
+      </button>
+      <h3>Стать партнером</h3>
+      <p>Заполните форму и наш менеджер свяжется с вами в течение 5 минут</p>
+      <form action="sendmail.php" class="row form partner-form" method="post">
+        <input type="hidden" name="subject" value="Стаь партнером">
+        <div class="col-sm-12 form-group">
+          <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input type="tel" name="phone" class="form__field" required placeholder="+7 (___) ___-__-__" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="19">
+        </div>
+        <div class="col-sm-12 form-group">
+          <input type="submit" class="main-btn" name="submit" value="Заказать звонок">
+        </div>
+      </form>
+    </div>
+
+    <div id="enroll" class="modal">
+      <button class="enroll_close modal__close">
+        Close
+        <span class="modal__close-line"></span>
+      </button>
+      <h3>Записаться на тренировку за 950 руб.</h3>
+      <p>Заполните форму и наш менеджер свяжется с вами в течение 5 минут</p>
+      <form action="sendmail.php" class="row form enroll-form" method="post">
+        <input type="hidden" name="subject" value="Запись на тренировку за 950 руб.">
+        <div class="col-sm-12 form-group">
+          <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input type="tel" name="phone" class="form__field" required placeholder="+7 (___) ___-__-__" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="19">
+        </div>
+        <div class="col-sm-12 form-group">
+          <input type="submit" class="main-btn" name="submit" value="Записаться">
+        </div>
+      </form>
+    </div>
+
+    <div id="thanks" class="modal">
+      <button class="thanks_close modal__close">
+        Close
+        <span class="modal__close-line"></span>
+      </button>
+      <h3>Спасибо за заказ</h3>
+      <p>Скоро мы Вам перезвоним!</p>
+    </div>
+
+    <svg style="display:none;">
+      <symbol id="arrow-next" viewBox="0 0 202 383">
+        <path d="M198.5,183.4L18.5,3.3C14.2-1,7.4-1,3.2,3.3c-4.2,4.2-4.2,11,0,15.3L175.6,191L3.2,363.4c-4.2,4.2-4.2,11,0,15.3c2.1,2.1,4.9,3.2,7.6,3.2c2.7,0,5.5-1,7.6-3.2l180.1-180.1C202.7,194.4,202.7,187.5,198.5,183.4L198.5,183.4z M198.5,183.4"/>
+      </symbol>
+      <symbol id="arrow-prev" viewBox="0 0 202 383">
+        <path d="M3.3,199.4l180.1,180.1c4.2,4.2,11,4.2,15.3,0c4.2-4.2,4.2-11,0-15.3L26.3,191.8L198.7,19.4c4.2-4.2,4.2-11,0-15.3c-2.1-2.1-4.9-3.2-7.6-3.2c-2.7,0-5.5,1-7.6,3.2L3.4,184.2C-0.9,188.4-0.9,195.3,3.3,199.4L3.3,199.4zM3.3,199.4"/>
+      </symbol>
+    </svg> 
+
+    <script src="js/scripts.min.js"></script>
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  </body>
+</html>
